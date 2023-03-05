@@ -1,0 +1,91 @@
+
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 1;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    top: -4px;
+    background: #FFFFFF;
+    border: 3px solid #F07FAE;
+}
+.ui-slider .ui-slider-range {
+
+    width: 52.66%;
+
+    position: absolute;
+    z-index: 1;
+    font-size: 8px;
+    display: block;
+    background: linear-gradient(90deg, #FEEA8B 0%, #F495B5 100%);
+    border-radius: 5px;
+    background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+    filter: inherit;
+}
+
+.ui-slider-horizontal {
+    width: 250px;
+    height: 5px;
+    background: #EEEEEE;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.3em;
+
+}
+.ui-slider-horizontal .ui-slider-range {
+    height: 100%;
+}
+
+.filters-btn_item {
+    display: flex;
+    margin: 50px 0;
+}
+
+.filters-btn {
+    width: 138px;
+    height: 50px;
+    background: #F07FAE;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    transition-duration: .3s;
+}
+.filters-btn:hover {
+    background: #E5E5E5;
+    border: 1px solid #DFDFDF;
+    color: #333333;
+}
+.reset {
+    background: #E5E5E5;
+    border: 1px solid #DFDFDF;
+    color: #333333;
+    margin-right: 0;
+}
+.reset:hover {
+    background: #F07FAE;
+    color: #FFFFFF;
+    border: 0;
+}
+
+@media (max-width: 873px) {
+
+    .filters-price_label {
+        width: 55px;
+        margin: 0 10px 0 0;
+    }
+}
+
