@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/smartbasket.min.css">
+    <link href = "fonts/stylesheet.css" rel = "stylesheet" type = "text/css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <title>Card Product</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<!--Header--->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-top">
+               <div class="header-center__logo-mobil">
+                    <img src="img/header/logo.png" alt="">
+                </div>
+                <nav class="header-top__body" id="nav">
+                    <a href="index.html" class="header-top__link">Главная</a>
+                    <a href="#" class="header-top__link">О компании</a>
+                    <a href="catalog.html" class="header-top__link">Каталог</a>
+                    <a href="#" class="header-top__link">Покупателям</a>
+                    <a href="#" class="header-top__link">Доставка и оплата</a>
+                    <a href="#" class="header-top__link">Акции</a>
+                    <a href="#" class="header-top__link">Блог</a>
+                    <a href="#" class="header-top__link">Контакты</a>
+                    <div class="header-top__social-mobil">
+                        <a href="#" target="_blank" class="header-top__img">
+                            <img src="img/header/vk.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="header-top__img">
+                            <img src="img/header/inst.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="header-top__img">
+                            <img src="img/header/watsap.svg" alt="">
+                        </a>
+                    </div>
+                </nav>
+                <div class="header-top__social">
+                        <a href="#" target="_blank" class="header-top__img">
+                            <img src="img/header/vk.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="header-top__img">
+                            <img src="img/header/inst.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank" class="header-top__img">
+                            <img src="img/header/watsap.svg" alt="">
+                        </a>
+                    </div>
+                <button class="burger" type="button" id="burger"><span class="burger__item">Menu</span> </button>
+
+                <div class="search-mobil" id="search-mobil">
+                <div class="search-mobil_title"><span>Поиск по сайту</span><img src="img/header/close.svg" alt="" id="img-close2"></div>
+                <form class="form form-search-mobil" action="/" method="post">
+                    <div class="form__group form__group-search-mobil">
+                        <input class="form__input form__input-search-mobil" name="search" type="text"  placeholder="Что вы ищите?">
+                        <button class="form__btn form__btn-search-mobil" type="submit"><img src="img/header/search.svg" alt=""></button>
+                    </div>
+                    <button class="filters-btn filters-btn-search-mobil" type="button" id="filters-btn-search-mobil">Применить</button>
+                </form>
+            </div>
+            </div>
+            <div class="header-center">
+                <div class="header-center__item">
+                    <a class="header-center__logo" href="#">
+                        <img src="img/header/logo.png" alt="">
+                    </a>
+                    <form class="form" action="/" method="post">
+                        <div class="form__group">
+                            <input class="form__input" name="search" type="text"  placeholder="Что вы ищите?">
+                            <button class="form__btn" type="submit"><img src="img/header/search.svg" alt=""></button>
+                        </div>
+                    </form>
+                    <div class="header-center__body">
+                        <a class="header-center__tel" href="tel:89009001234">8 (800) 55 48 97</a>
+                        <a class="header-center__mail" href="#">info@neyro-t.ru</a>
+                        <div class="header-center__text" >Время работы: 07:00 - 19:00 по МСК</div>
+                        </div>
+
+                        <div class="header-center__body-mobil">
+                        <a class="header-center__tel" href="tel:89009001234">8 (800) 55 48 97</a>
+                        <div class="header-center__text-mobil" >07:00 - 19:00 по МСК</div>
+                        </div>
+                    <div class="header-center__action">
+                        <a href="#" class="header-center__user user-mobil">
+                            <img class="user-mobil-img" src="img/header/search.svg" alt="" id="form__btn-search-mobil">
+                        </a>
+                        <a href="#" class="header-center__user" data-modal="#modal_hire_me">
+                            <img src="img/header/user.svg" alt="">
+                        </a>
+                        <button class="alert-button"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="header-bottom__item" id="nav-2">
+                    <a href="#" class="header-bottom__link" id="nav__link-2">Мозжечковая стимуляция</a>
+                    <a href="#" class="header-bottom__link" id="nav__link-2">Межполушарные доски</a>
+                    <a href="#" class="header-bottom__link" id="nav__link-2">Нейрокосички</a>
+                    <a href="#" class="header-bottom__link" id="nav__link-2">Балансиры</a>
+                    <a href="#" class="header-bottom__link" id="nav__link-2">Нейровосьмерки</a>
+                    <a href="#" class="header-bottom__link" id="nav__link-2">Разное</a>
+                </nav>
+                <div class="burger-2__item">
+                    <button class="burger-2" type="button" id="burger-2"><span class="burger__item-2">Каталог</span></button>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+
+<div class="card-product">
+    <div class="container">
+        <div class="catalog__link_body">
+            <a href="index.html" class="catalog_link">Главная страница</a>
+            <a href="catalog.html" class="catalog_link">Каталог продукции</a>
+            <a href="#" class="catalog_link">Доска Бильгоу</a>
+         </div>
+         <div class="card-product_item">
+             <div class="card-product_colum">
+
+                 <div class="slider_item">
+
+                    <div class="slider-nav">
+                        <div class="slider-nav_body">
+                            <img class="slider-nav_img" src="img/card-product/image01.jpg" alt="">
+                        </div>
+                        <div class="slider-nav_body">
+                            <img class="slider-nav_img" src="img/card-product/image02.jpg" alt="">
+                        </div>
+                        <div class="slider-nav_body">
+                            <img class="slider-nav_img" src="img/card-product/image03.jpg" alt="">
+                        </div>
+                        <div class="slider-nav_body">
+                            <img class="slider-nav_img" src="img/card-product/image04.jpg" alt="">
+                        </div>
+                    </div>
+
+
+                 <div class="slider-for">
+                        <div class="slider-for_body">
+                            <img class="slider-for_img" src="img/card-product/image01.jpg" alt="">
+                        </div>
+                        <div class="slider-for_body">
+                            <img class="slider-for_img" src="img/card-product/image02.jpg" alt="">
+                        </div>
+                        <div class="slider-for_body">
+                            <img class="slider-for_img" src="img/card-product/image03.jpg" alt="">
+                        </div>
+                        <div class="slider-for_body">
+                            <img class="slider-for_img" src="img/card-product/image04.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-product_subtitle">Что такое доска Бильгоу?</div>
+                <div class="card-product_text"><p>Нейрокоррекционная реабилитация обязательно включает в себя программу стимуляции мозжечка. С помощью полноценной программы можно улучшить концентрацию внимания ребенка, восприятие речи, развить навыки чтения, счета и активизировать память.</p>
+                <p>Необыкновенной популярностью у психологов, педагогов и дефектологов пользуется эффективная система упражнений на балансировочной доске Бильгоу.</p></div>
+            </div>
+
+
+
+             <div class="card-product_colum card-product_body">
+               <div class="card-basket__title card-product_title">Доска Бильгоу</div>
+                <div class="card-basket__body">
+                    <div class="card-basket__price">
+                        <div class="card-basket__price-new">2 490 р.</div>
+                        <div class="card-basket__price-old">3 470 р.</div>
+                    </div>
+                    <div class="product__quantity_tablet">
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn btn-card-basket"
+                        data-sb-id-or-vendor-code="01"
+                        data-sb-product-name="Доска Бильгоу для мозжечковой стимуляции"
+                        data-sb-product-price="2490"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%207.jpg">Добавить в корзину</button>
+                    </div>
+                    <div class="card-product_guarantee">
+                        <div class="card-product_guarantee_item">
+                            <div class="card-product_guarantee-img">
+                                <img src="img/card-product/Vector_mob/Vector_mob01.svg" alt="">
+                            </div>
+                            <div class="card-product_guarantee-text">Гарантия 1 год</div>
+                        </div>
+                        <div class="card-product_guarantee_item">
+                            <div class="card-product_guarantee-img">
+                                <img src="img/card-product/Vector_mob/Vector_mob02.svg" alt="">
+                            </div>
+                            <div class="card-product_guarantee-text">Возврат в течении 1 месяца</div>
+                        </div>
+                        <div class="card-product_guarantee_item">
+                            <div class="card-product_guarantee-img">
+                                <img src="img/card-product/Vector_mob/Vector_mob03.svg" alt="">
+                            </div>
+                            <div class="card-product_guarantee-text">Доставка:</div>
+                            <div class="card-product_delivery">
+                                <img src="img/card-product/Vector_mob/pochta.png" alt="">
+                            </div>
+                            <div class="card-product_delivery">
+                                <img src="img/card-product/Vector_mob/sdek.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="characteristics tabs" id="tabs">
+                    <div class="characteristics_body tab-header">
+                       <button class="characteristics_title tab-header__item js-tab-trigger active" data-tab="1" type="button">Комплектация</button>
+                       <button class="characteristics_title tab-header__item js-tab-trigger " data-tab="2" type="button">Характеристики</button>
+                    </div>
+                    <div class="characteristics_content tab-content">
+                        <div class="tab-content__item js-tab-content active" data-tab="1">
+                            <div class="characteristics_content-body">
+                                <div class="characteristics_content-title">Методичка с занятиями</div>
+                                <div class="characteristics_content-title">1 шт.</div>
+                            </div>
+                            <div class="characteristics_content-body characteristics_content-body-none">
+                                <div class="characteristics_content-title">Балансировочная цветная доска</div>
+                                <div class="characteristics_content-title">1 шт.</div>
+                            </div>
+                            <div class="characteristics_content-body">
+                                <div class="characteristics_content-title">Полусферические полозья</div>
+                                <div class="characteristics_content-title">2 шт.</div>
+                            </div>
+                            <div class="characteristics_content-body characteristics_content-body-none">
+                                <div class="characteristics_content-title">Ключ для регулирования полозьев</div>
+                                <div class="characteristics_content-title">1 шт.</div>
+                            </div>
+                            <div class="characteristics_content-body">
+                                <div class="characteristics_content-title">Инструкция по сборке</div>
+                                <div class="characteristics_content-title">1 шт.</div>
+                            </div>
+                        </div>
+                        <div class="tab-content__item js-tab-content" data-tab="2">
+                            <div class="characteristics_content-body">
+                                <div class="characteristics_content-title">Балансировочная цветная доска</div>
+                                <div class="characteristics_content-title">100 шт.</div>
+                            </div>
+                            <div class="characteristics_content-body characteristics_content-body-none">
+                                <div class="characteristics_content-title">Полусферические полозья</div>
+                                <div class="characteristics_content-title">10 шт.</div>
+                            </div>
+                            <div class="characteristics_content-body">
+                                <div class="characteristics_content-title">Ключ для регулирования полозьев</div>
+                                <div class="characteristics_content-title">2000 шт.</div>
+                            </div>
+                            <div class="characteristics_content-body characteristics_content-body-none">
+                                <div class="characteristics_content-title">Инструкция по сборке</div>
+                                <div class="characteristics_content-title">100 шт.</div>
+                            </div>
+                            <div class="characteristics_content-body">
+                                <div class="characteristics_content-title">Методичка с занятиями</div>
+                                <div class="characteristics_content-title">180 шт.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+
+     </div>
+</div>
+<!--Card--->
+<div class="card">
+    <div class="container">
+        <div class="card-title-body">
+            <div class="card-title">С этим товаром покупают</div>
+            <a class="card-title-link" href="catalog.html">В каталог</a>
+        </div>
+        <div class="card__item">
+            <div class="card__colum">
+                <div class="card-basket">
+                    <div class="card-basket__img">
+                        <img class="img-card" src="img/card/image%207.jpg" alt="">
+                    </div>
+                    <div class="card-basket__title">Доска Бильгоу для мозжечковой стимуляции</div>
+                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <div class="card-basket__body">
+                        <div class="card-basket__price">
+                            <div class="card-basket__price-new">2 490 р.</div>
+                            <div class="card-basket__price-old">3 470 р.</div>
+                        </div>
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn"
+                        data-sb-id-or-vendor-code="01"
+                        data-sb-product-name="Доска Бильгоу для мозжечковой стимуляции"
+                        data-sb-product-price="2490"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%207.jpg">Купить</button>
+                    </div>
+                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                </div>
+            </div>
+            <div class="card__colum">
+                <div class="card-basket">
+                    <div class="card-basket__img">
+                        <img class="img-card" src="img/card/image%206.jpg" alt="">
+                    </div>
+                    <div class="card-basket__title">Набор мячей с фиксацией на одежде</div>
+                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <div class="card-basket__body">
+                        <div class="card-basket__price">
+                            <div class="card-basket__price-new">650 р.</div>
+                            <div class="card-basket__price-old">935 р.</div>
+                        </div>
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn"
+                        data-sb-id-or-vendor-code="02"
+                        data-sb-product-name="Набор мячей с фиксацией на одежде"
+                        data-sb-product-price="650"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%206.jpg">Купить</button>
+                    </div>
+                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                </div>
+            </div>
+            <div class="card__colum">
+                <div class="card-basket">
+                    <div class="card-basket__img">
+                        <img class="img-card" src="img/card/image%205.jpg" alt="">
+                    </div>
+                    <div class="card-basket__title">Мишень напольная цветная</div>
+                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <div class="card-basket__body">
+                        <div class="card-basket__price">
+                            <div class="card-basket__price-new">1 590 р.</div>
+                            <div class="card-basket__price-old">2 000 р.</div>
+                        </div>
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn"
+                        data-sb-id-or-vendor-code="03"
+                        data-sb-product-name="Мишень напольная цветная"
+                        data-sb-product-price="1590"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%205.jpg">Купить</button>
+                    </div>
+                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                </div>
+            </div>
+            <div class="card__colum">
+                <div class="card-basket">
+                    <div class="card-basket__img">
+                        <img class="img-card" src="img/card/image%204.jpg" alt="">
+                    </div>
+                    <div class="card-basket__title">Сумка для тренажеров Бильгоу</div>
+                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <div class="card-basket__body">
+                        <div class="card-basket__price">
+                            <div class="card-basket__price-new">2 490 р.</div>
+                            <div class="card-basket__price-old">3000 р.</div>
+                        </div>
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn"
+                        data-sb-id-or-vendor-code="04"
+                        data-sb-product-name="Сумка для тренажеров Бильгоу"
+                        data-sb-product-price="2490"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%204.jpg">Купить</button>
+                    </div>
+                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Card--->
+<div class="card">
+    <div class="container">
+        <div class="card-title-body">
+            <div class="card-title">Похожие товары</div>
+            <a class="card-title-link" href="catalog.html">В каталог</a>
+        </div>
+        <div class="card__item">
+            <div class="card__colum">
+                <div class="card-basket">
+                    <div class="card-basket__img">
+                        <img class="img-card" src="img/card/image%207.jpg" alt="">
+                    </div>
+                    <div class="card-basket__title">Доска Бильгоу для мозжечковой стимуляции</div>
+                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <div class="card-basket__body">
+                        <div class="card-basket__price">
+                            <div class="card-basket__price-new">2 490 р.</div>
+                            <div class="card-basket__price-old">3 470 р.</div>
+                        </div>
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn"
+                        data-sb-id-or-vendor-code="01"
+                        data-sb-product-name="Доска Бильгоу для мозжечковой стимуляции"
+                        data-sb-product-price="2490"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%207.jpg">Купить</button>
+                    </div>
+                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                </div>
+            </div>
+            <div class="card__colum">
+                <div class="card-basket">
+                    <div class="card-basket__img">
+                        <img class="img-card" src="img/card/image%206.jpg" alt="">
+                    </div>
+                    <div class="card-basket__title">Набор мячей с фиксацией на одежде</div>
+                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <div class="card-basket__body">
+                        <div class="card-basket__price">
+                            <div class="card-basket__price-new">650 р.</div>
+                            <div class="card-basket__price-old">935 р.</div>
+                        </div>
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn"
+                        data-sb-id-or-vendor-code="02"
+                        data-sb-product-name="Набор мячей с фиксацией на одежде"
+                        data-sb-product-price="650"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%206.jpg">Купить</button>
+                    </div>
+                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                </div>
+            </div>
+            <div class="card__colum">
+                <div class="card-basket">
+                    <div class="card-basket__img">
+                        <img class="img-card" src="img/card/image%205.jpg" alt="">
+                    </div>
+                    <div class="card-basket__title">Мишень напольная цветная</div>
+                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <div class="card-basket__body">
+                        <div class="card-basket__price">
+                            <div class="card-basket__price-new">1 590 р.</div>
+                            <div class="card-basket__price-old">2 000 р.</div>
+                        </div>
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn"
+                        data-sb-id-or-vendor-code="03"
+                        data-sb-product-name="Мишень напольная цветная"
+                        data-sb-product-price="1590"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%205.jpg">Купить</button>
+                    </div>
+                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                </div>
+            </div>
+            <div class="card__colum">
+                <div class="card-basket">
+                    <div class="card-basket__img">
+                        <img class="img-card" src="img/card/image%204.jpg" alt="">
+                    </div>
+                    <div class="card-basket__title">Сумка для тренажеров Бильгоу</div>
+                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <div class="card-basket__body">
+                        <div class="card-basket__price">
+                            <div class="card-basket__price-new">2 490 р.</div>
+                            <div class="card-basket__price-old">3000 р.</div>
+                        </div>
+                        <div class="product__quantity"></div>
+                        <button class="card-form__btn"
+                        data-sb-id-or-vendor-code="04"
+                        data-sb-product-name="Сумка для тренажеров Бильгоу"
+                        data-sb-product-price="2490"
+                        data-sb-product-quantity="1"
+                        data-sb-product-img="img/card/image%204.jpg">Купить</button>
+                    </div>
+                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Footer--->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top_item">
+                <div class="footer-top_title">Новинки и акции у вас в почте</div>
+                <form class="form-footer" action="/" method="post">
+                    <div class="form__group-footer">
+                        <input class="form__input-footer" name="search" type="text"  placeholder="Ваш e-mail адрес">
+                        <button class="form__btn-footer" type="submit" data-modal="#modal_list">Подписаться</button>
+                    </div>
+                </form>
+                    <div class="footer-top_body">
+                        <a class="header-center__tel" href="tel:89009001234">8 (800) 55 48 97</a>
+                        <div class="footer-top_text">Звонок бесплатный</div>
+                    </div>
+                    <button class="footer-top_btn" data-modal="#modal_question">Задать вопрос</button>
+                    <button class="footer-top_btn" data-modal="#modal_call">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-center">
+        <div class="container">
+            <div class="footer-center_item">
+                <div class="footer-center_colum">
+                    <div class="footer-center_img">
+                        <img src="img/footer/logo-footer.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer-center_colum">
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title">Информация
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Кредит</a></li>
+                            <li><a href="#">Возврат</a></li>
+                            <li><a href="#">Покупателям</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center_colum">
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title">Вебинар
+                            <li><a href="#">Психолог</a></li>
+                            <li><a href="#">Логопед</a></li>
+                            <li><a href="#">Дефектолог</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center_colum">
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title">Новости
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center_colum">
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title footer-right">Контакты
+                            <li>Время работы: 07:00 - 19:00 по МСК</li>
+                            <li><a href="#">info@neyro-t.ru</a></li>
+                            <li>Свердловская обл., г.Новоуральск, ул. Фрунзе оф.3</li>
+                        </ul>
+                        <div class="header-top__social social-footer">
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector.svg" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector%20(1).svg" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector%20(2).svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom_item">
+                <div class="footer-bottom_text">Политика обработки персональных данных</div>
+                <div class="footer-bottom_img">
+                    <div class="footer-bottom_card">
+                        <img src="img/footer/mir.svg" alt="">
+                    </div>
+                    <div class="footer-bottom_card">
+                        <img src="img/footer/master%20card.svg" alt="">
+                    </div>
+                    <div class="footer-bottom_card">
+                        <img src="img/footer/visa.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Footer tablet--->
+<footer class="footer-tablet">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top_item">
+                <div class="footer-top_item-tablet">
+                    <div class="footer-top_title footer-top_title-tablet">Новинки и акции у вас в почте</div>
+                    <form class="form-footer" action="/" method="post">
+                        <div class="form__group-footer">
+                            <input class="form__input-footer" name="search" type="text"  placeholder="Ваш e-mail адрес">
+                            <button class="form__btn-footer" type="submit" data-modal="#modal_list">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-top_body">
+                    <div class="footer-top_body-tablet">
+                        <a class="header-center__tel" href="tel:89009001234">8 (800) 55 48 97</a>
+                        <div class="footer-top_text footer-top_text-tablet">Звонок бесплатный</div>
+                    </div>
+                    <button class="footer-top_btn footer-top_btn-tablet" data-modal="#modal_question">Задать вопрос</button>
+                    <button class="footer-top_btn footer-top_btn-tablet" data-modal="#modal_call">Заказать звонок</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-center">
+        <div class="container">
+            <div class="footer-center_colum footer-center_colum-tablet">
+                <div class="footer-center_img">
+                    <img src="img/footer/logo-footer.svg" alt="">
+                </div>
+                </div>
+            <div class="footer-center_item">
+                <div class="footer-center_colum">
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title">Информация
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Кредит</a></li>
+                            <li><a href="#">Возврат</a></li>
+                            <li><a href="#">Покупателям</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center_colum">
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title">Вебинар
+                            <li><a href="#">Психолог</a></li>
+                            <li><a href="#">Логопед</a></li>
+                            <li><a href="#">Дефектолог</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center_colum">
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title">Новости
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center_colum">
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title footer-right">Контакты
+                            <li>Время работы: 07:00 - 19:00 по МСК</li>
+                            <li><a href="#">info@neyro-t.ru</a></li>
+                            <li>Свердловская обл., г.Новоуральск, ул. Фрунзе оф.3</li>
+                        </ul>
+                        <div class="header-top__social social-footer">
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector.svg" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector%20(1).svg" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector%20(2).svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom_item">
+                <div class="footer-bottom_text">Политика обработки персональных данных</div>
+                <div class="footer-bottom_img">
+                    <div class="footer-bottom_card">
+                        <img src="img/footer/mir.svg" alt="">
+                    </div>
+                    <div class="footer-bottom_card">
+                        <img src="img/footer/master%20card.svg" alt="">
+                    </div>
+                    <div class="footer-bottom_card">
+                        <img src="img/footer/visa.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Footer mobil--->
+<footer class="footer-mobil">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top_item footer-top_item-mobil">
+                <div class="footer-top_item-tablet">
+                    <div class="footer-top_title footer-top_title-mobil">Новинки и акции у вас в почте</div>
+                    <form class="form-footer" action="/" method="post">
+                        <div class="form__group-footer form__group-footer-mobil">
+                            <input class="form__input-footer form__input-footer-mobil" name="search" type="text"  placeholder="Ваш e-mail адрес">
+                            <button class="form__btn-footer form__btn-footer-mobil" type="submit" data-modal="#modal_list">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-top_body">
+                    <div class="footer-top_body2">
+                        <a class="header-center__tel footer--tel" href="tel:89009001234">8 (800) 55 48 97</a>
+                        <div class="footer-top_text footer-top_text-mobil">Звонок бесплатный</div>
+                    </div>
+                    <button class="footer-top_btn footer-top_btn-mobil" data-modal="#modal_question">Задать вопрос</button>
+                    <button class="footer-top_btn footer-top_btn-mobil" data-modal="#modal_call">Заказать звонок</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-center">
+        <div class="container">
+            <div class="footer-center_colum footer-center_colum-tablet">
+                <div class="footer-center_img">
+                    <img src="img/footer/logo-footer.svg" alt="">
+                </div>
+                </div>
+            <div class="footer-center_item">
+                <div class="footer-center_colum">
+                    <div class="footer-center_body-mobil">
+                        <ul class="footer-center_title">Информация
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Кредит</a></li>
+                            <li><a href="#">Возврат</a></li>
+                            <li><a href="#">Покупателям</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title">Вебинар
+                            <li><a href="#">Психолог</a></li>
+                            <li><a href="#">Логопед</a></li>
+                            <li><a href="#">Дефектолог</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center_colum">
+                    <div class="footer-center_body-mobil">
+                        <ul class="footer-center_title">Новости
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-center_body">
+                        <ul class="footer-center_title footer-right">Контакты
+                            <li>Время работы: 07:00 - 19:00 по МСК</li>
+                            <li><a href="#">info@neyro-t.ru</a></li>
+                            <li>Свердловская обл., г.Новоуральск, ул. Фрунзе оф.3</li>
+                        </ul>
+                        <div class="header-top__social social-footer">
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector.svg" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector%20(1).svg" alt="">
+                            </a>
+                            <a href="#" target="_blank" class="header-top__img">
+                                <img src="img/footer/Vector%20(2).svg" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-bottom_img footer-bottom_img-mobil">
+                            <div class="footer-bottom_card">
+                                <img src="img/footer/mir.svg" alt="">
+                            </div>
+                            <div class="footer-bottom_card">
+                                <img src="img/footer/master%20card.svg" alt="">
+                            </div>
+                            <div class="footer-bottom_card">
+                                <img src="img/footer/visa.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom_item">
+                <div class="footer-bottom_text">Политика обработки персональных данных</div>
+
+                <div class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--Modal-User--->
+
+<div class="modal" id="modal_hire_me">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
+            <div class="modal__body">
+                <div class="modal_title">Авторизация</div>
+                <form class="modal__form" action="/" method="post">
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваш логин">
+                    </div>
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="input-tel" type="password" id="input-email" placeholder="Ваш пароль">
+                    </div>
+                    <div class="modal-btn_body">
+                        <button class="modal__btn" type="submit">Войти на сайт</button>
+                        <a href="#" class="modal-password">Забыли пароль?</a>
+                    </div>
+                    <div class="modal_text" data-modal="#modal_hire_me">Нет аккаунта? <a class="modal-password" href="#" data-modal="#modal_registration"> Зарегистрируйтесь</a></div>
+                    <div class="modal_subtext">Войти через:</div>
+                    <div class="modal_social">
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/twitter.svg" alt="">
+                        </a>
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/ok.svg" alt="">
+                        </a>
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/google.svg" alt="">
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!--Modal-registration--->
+
+<div class="modal" id="modal_registration">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
+            <div class="modal__body">
+                <div class="modal_title">Регистрация</div>
+                <form class="modal__form" action="/" method="post">
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваш логин">
+                    </div>
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="input-tel" type="password" id="input-email" placeholder="Ваш пароль">
+                    </div>
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="input-tel" type="password" id="input-email" placeholder="Повторите пароль">
+                    </div>
+                    <div class="modal-btn_body modal__btn-registration">
+                        <button class="modal__btn" type="submit">Регистрация </button>
+                    </div>
+                    <div class="modal_subtext">Войти через:</div>
+                    <div class="modal_social">
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/twitter.svg" alt="">
+                        </a>
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/ok.svg" alt="">
+                        </a>
+                        <a href="#" class="modal_icon" target="_blank">
+                            <img src="img/social/google.svg" alt="">
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!--Modal-question--->
+
+<div class="modal" id="modal_question">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
+            <div class="modal__body">
+                <div class="modal_title">Задать вопрос</div>
+                <form class="modal__form" action="/" method="post">
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваш email">
+                    </div>
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Завайте ваш вопрос?">
+                    </div>
+                    <div class="modal-btn_body modal__btn-registration">
+                        <button class="modal__btn" type="submit">Задать вопрос</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!--Modal-question--->
+
+<div class="modal" id="modal_call">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
+            <div class="modal__body">
+                <div class="modal_title">Заказать звонок</div>
+                <form class="modal__form" action="/" method="post">
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form__group">
+                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Номер телефона">
+                    </div>
+                    <div class="modal-btn_body modal__btn-registration">
+                        <button class="modal__btn" type="submit">Заказать звонок</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!--Modal-mailing list--->
+
+<div class="modal" id="modal_list">
+        <div class="modal__dialog">
+            <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
+            <div class="modal__body">
+                <div class="modal_image">
+                    <img src="img/Vector111.svg" alt="">
+                </div>
+                <div class="modal_title">Вы успешно подписались на рассылку</div>
+                <div class="modal_subtitle">Проверьте вашу почту, и перейдите по ссылки для подтверждения</div>
+            </div>
+        </div>
+    </div>
+
+<!--Javaskript--->
+    <script src="js/app.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./js/smartbasket.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.smart-basket__wrapper').smbasket({
+                productElement: 'card-basket, .card-basket__body',
+                buttonAddToBasket: 'card-form__btn',
+                productPrice: 'product__price-number',
+                productSize: 'product__size-element',
+
+                productQuantityWrapper: 'product__quantity',
+                smartBasketMinArea: 'alert-button',
+                countryCode: '+7',
+                smartBasketCurrency: '₽',
+                smartBasketMinIconPath: 'img/header/basket.svg',
+
+                agreement: {
+                    isRequired: true,
+                    isChecked: true,
+                    isLink: 'https://artstranger.ru/privacy.html',
+                },
+                nameIsRequired: false,
+            });
+        });
+    </script>
+</body>
+</html>
