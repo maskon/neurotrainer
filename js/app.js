@@ -213,12 +213,31 @@ $('.js-tab-trigger').click(function() {
    $('.js-tab-content.active').removeClass('active'); // 3
    content.addClass('active'); // 4
 });
-
-
 });
 
 
+/* Корзина товаров */
+$(function () {
+    $('.smart-basket__wrapper').smbasket({
+        productElement: 'card-basket',
+        buttonAddToBasket: 'card-form__btn',
+        productPrice: 'product__price-number',
+        productSize: 'product__size-element',
 
+        productQuantityWrapper: 'product__quantity',
+        smartBasketMinArea: 'alert-button',
+        countryCode: '+7',
+        smartBasketCurrency: '₽',
+        smartBasketMinIconPath: 'img/header/basket.svg',
+
+        agreement: {
+            isRequired: true,
+            isChecked: true,
+            isLink: 'https://artstranger.ru/privacy.html',
+            },
+            nameIsRequired: false,
+        });
+    });
 
 
 
