@@ -570,14 +570,14 @@ body.no-scroll {
         background: #fff;
         height: 100%;
         overflow: auto;
-        top: 196px;
+        top: 150px;
         left: -100%;
         transition: all 0.5s ease 0s;
     }
 
     .header-bottom__item.active {
         display: block;
-        top: 196px;
+        top: 150px;
         left: 0;
     }
 
@@ -589,9 +589,15 @@ body.no-scroll {
         margin: 0 20px;
         padding: 15px 5px;
     }
+    
+    .header-bottom__link:first-child {
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
 
-    .burger-2.active .burger-2__img {
-        display: inline-block;
+    .burger-2.active {
+        display: none;
         margin: 12px 0px 0 20px;
     }
 }
@@ -646,8 +652,28 @@ body.no-scroll {
 
     .header-bottom__link {
         font-size: 24px;
-        line-height: 34px;
+        line-height: 26px;
         margin: 0 8px;
+    }
+    
+    .header-bottom__link:first-child {
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .header-bottom__item {
+        top: 130px;
+    }
+
+    .header-bottom__item.active {
+        top: 130px;
+    }
+    
+    .header-bottom .burger2-close {
+        width: 20px;
+        height: 20px;
+        margin-top: -6px;
     }
 }
 
@@ -691,6 +717,10 @@ body.no-scroll {
 .left_tytle {
     font-size: 50px;
     margin: 65px 0 30px 0;
+}
+
+.left_img-mobil {
+    display: none;
 }
 
 .left_text {
@@ -821,7 +851,16 @@ body.no-scroll {
     }
 
     .left_body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0 10px 30px 10px;
+    }
+    
+    .left_tytle {
+        font-size: 40px;
+        margin: 50px 0 45px 0;
     }
 
     .left_colum-img {
@@ -835,9 +874,26 @@ body.no-scroll {
     .colum-right_item, .colum-right_item-2  {
         margin: 0 0 10px 0;
     }
+    
+    .left_img-mobil {
+        display: block;
+        height: 300px;
+    }
+    
+    .left_img-mobil img {
+        height: 300px;
+    }
 }
 
 @media (max-width: 450px) {
+    
+    .intro {
+        margin: 223px 0 0 0;
+    }
+    
+    .left_tytle {
+        margin: 17px 0 35px 0;
+    }
 
     .btn {
         width: 100%;
