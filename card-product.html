@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href = "fonts/stylesheet.css" rel = "stylesheet" type = "text/css"/>
-    <title>Нейротренажеры</title>
+    <link rel="stylesheet" href="css/smartbasket.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова для яндекс"/>
+    <meta name="googlebot" content="notranslate">
+    
+    <title>Карта продукта</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
@@ -76,12 +83,12 @@
                     <div class="header-center__body">
                         <a class="header-center__tel" href="tel:89009001234">8 (800) 55 48 97</a>
                         <a class="header-center__mail" href="#">info@neyro-t.ru</a>
-                        <div class="header-center__text" >Время работы: 07:00 - 19:00 по МСК</div>
+                        <p class="header-center__text" >Время работы: 07:00 - 19:00 по МСК</p>
                         </div>
 
                         <div class="header-center__body-mobil">
                         <a class="header-center__tel" href="tel:89009001234">8 (800) 55 48 97</a>
-                        <div class="header-center__text-mobil" >07:00 - 19:00 по МСК</div>
+                        <p class="header-center__text-mobil" >07:00 - 19:00 по МСК</p>
                         </div>
                     <div class="header-center__action">
                         <a href="#" class="header-center__user user-mobil">
@@ -96,6 +103,10 @@
             </div>
             <div class="header-bottom">
                 <nav class="header-bottom__item" id="nav-2">
+                    <div class="header-bottom__menu">
+                        <h3 class="header-bottom__link">Каталог товаров</h3>
+                        <button class="modal__close modal__close-mobil" type="button" id="burger-2"><img class="burger2-close" src="img/modal-close.svg" alt="Close"></button>
+                    </div>
                     <a href="#" class="header-bottom__link" id="nav__link-2">Мозжечковая стимуляция</a>
                     <a href="#" class="header-bottom__link" id="nav__link-2">Межполушарные доски</a>
                     <a href="#" class="header-bottom__link" id="nav__link-2">Нейрокосички</a>
@@ -104,7 +115,7 @@
                     <a href="#" class="header-bottom__link" id="nav__link-2">Разное</a>
                 </nav>
                 <div class="burger-2__item">
-                    <button class="burger-2" type="button" id="burger-2"><span class="burger__item-2">Каталог</span></button>
+                    <button class="burger-2" type="button" id="burger-2"><span class="burger__item-2">Каталог товаров</span></button>
                 </div>
             </div>
         </div>
@@ -152,16 +163,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-product_subtitle">Что такое доска Бильгоу?</div>
-                <div class="card-product_text"><p>Нейрокоррекционная реабилитация обязательно включает в себя программу стимуляции мозжечка. С помощью полноценной программы можно улучшить концентрацию внимания ребенка, восприятие речи, развить навыки чтения, счета и активизировать память.</p>
-                <p>Необыкновенной популярностью у психологов, педагогов и дефектологов пользуется эффективная система упражнений на балансировочной доске Бильгоу.</p></div>
+                <h4 class="card-product_subtitle">Что такое доска Бильгоу?</h4>
+                <p class="card-product_text">Нейрокоррекционная реабилитация обязательно включает в себя программу стимуляции мозжечка. С помощью полноценной программы можно улучшить концентрацию внимания ребенка, восприятие речи, развить навыки чтения, счета и активизировать память.</p>
+                <p class="card-product_text">Необыкновенной популярностью у психологов, педагогов и дефектологов пользуется эффективная система упражнений на балансировочной доске Бильгоу.</p>
             </div>
              <div class="card-product_colum card-product_body">
-               <div class="card-basket__title card-product_title">Доска Бильгоу</div>
+               <h1 class="card-basket__title card-product_title">Доска Бильгоу</h1>
                 <div class="card-basket__body">
                     <div class="card-basket__price">
-                        <div class="card-basket__price-new">2 490 р.</div>
-                        <div class="card-basket__price-old">3 470 р.</div>
+                        <p class="card-basket__price-new">2 490 р.</p>
+                        <p class="card-basket__price-old">3 470 р.</p>
                     </div>
                     <div class="product__quantity_tablet">
                         <div class="product__quantity"></div>
@@ -177,19 +188,19 @@
                             <div class="card-product_guarantee-img">
                                 <img src="img/card-product/Vector_mob/Vector_mob01.svg" alt="">
                             </div>
-                            <div class="card-product_guarantee-text">Гарантия 1 год</div>
+                            <p class="card-product_guarantee-text">Гарантия 1 год</p>
                         </div>
                         <div class="card-product_guarantee_item">
                             <div class="card-product_guarantee-img">
                                 <img src="img/card-product/Vector_mob/Vector_mob02.svg" alt="">
                             </div>
-                            <div class="card-product_guarantee-text">Возврат в течении 1 месяца</div>
+                            <p class="card-product_guarantee-text">Возврат в течении 1 месяца</p>
                         </div>
                         <div class="card-product_guarantee_item">
                             <div class="card-product_guarantee-img">
                                 <img src="img/card-product/Vector_mob/Vector_mob03.svg" alt="">
                             </div>
-                            <div class="card-product_guarantee-text">Доставка:</div>
+                            <p class="card-product_guarantee-text">Доставка:</p>
                             <div class="card-product_delivery">
                                 <img src="img/card-product/Vector_mob/pochta.png" alt="">
                             </div>
@@ -207,46 +218,46 @@
                     <div class="characteristics_content tab-content">
                         <div class="tab-content__item js-tab-content active" data-tab="1">
                             <div class="characteristics_content-body">
-                                <div class="characteristics_content-title">Методичка с занятиями</div>
-                                <div class="characteristics_content-title">1 шт.</div>
+                                <p class="characteristics_content-title">Методичка с занятиями</p>
+                                <p class="characteristics_content-title">1 шт.</p>
                             </div>
                             <div class="characteristics_content-body characteristics_content-body-none">
-                                <div class="characteristics_content-title">Балансировочная цветная доска</div>
-                                <div class="characteristics_content-title">1 шт.</div>
+                                <p class="characteristics_content-title">Балансировочная цветная доска</p>
+                                <p class="characteristics_content-title">1 шт.</p>
                             </div>
                             <div class="characteristics_content-body">
-                                <div class="characteristics_content-title">Полусферические полозья</div>
-                                <div class="characteristics_content-title">2 шт.</div>
+                                <p class="characteristics_content-title">Полусферические полозья</p>
+                                <p class="characteristics_content-title">2 шт.</p>
                             </div>
                             <div class="characteristics_content-body characteristics_content-body-none">
-                                <div class="characteristics_content-title">Ключ для регулирования полозьев</div>
-                                <div class="characteristics_content-title">1 шт.</div>
+                                <p class="characteristics_content-title">Ключ для регулирования полозьев</p>
+                                <p class="characteristics_content-title">1 шт.</p>
                             </div>
                             <div class="characteristics_content-body">
-                                <div class="characteristics_content-title">Инструкция по сборке</div>
-                                <div class="characteristics_content-title">1 шт.</div>
+                                <p class="characteristics_content-title">Инструкция по сборке</p>
+                                <p class="characteristics_content-title">1 шт.</p>
                             </div>
                         </div>
                         <div class="tab-content__item js-tab-content" data-tab="2">
                             <div class="characteristics_content-body">
-                                <div class="characteristics_content-title">Балансировочная цветная доска</div>
-                                <div class="characteristics_content-title">100 шт.</div>
+                                <p class="characteristics_content-title">Балансировочная цветная доска</p>
+                                <p class="characteristics_content-title">100 шт.</p>
                             </div>
                             <div class="characteristics_content-body characteristics_content-body-none">
-                                <div class="characteristics_content-title">Полусферические полозья</div>
-                                <div class="characteristics_content-title">10 шт.</div>
+                                <p class="characteristics_content-title">Полусферические полозья</p>
+                                <p class="characteristics_content-title">10 шт.</p>
                             </div>
                             <div class="characteristics_content-body">
-                                <div class="characteristics_content-title">Ключ для регулирования полозьев</div>
-                                <div class="characteristics_content-title">2000 шт.</div>
+                                <p class="characteristics_content-title">Ключ для регулирования полозьев</p>
+                                <p class="characteristics_content-title">2000 шт.</p>
                             </div>
                             <div class="characteristics_content-body characteristics_content-body-none">
-                                <div class="characteristics_content-title">Инструкция по сборке</div>
-                                <div class="characteristics_content-title">100 шт.</div>
+                                <p class="characteristics_content-title">Инструкция по сборке</p>
+                                <p class="characteristics_content-title">100 шт.</p>
                             </div>
                             <div class="characteristics_content-body">
-                                <div class="characteristics_content-title">Методичка с занятиями</div>
-                                <div class="characteristics_content-title">180 шт.</div>
+                                <p class="characteristics_content-title">Методичка с занятиями</p>
+                                <p class="characteristics_content-title">180 шт.</p>
                             </div>
                         </div>
                     </div>
@@ -262,7 +273,7 @@
 <div class="card">
     <div class="container">
         <div class="card-title-body">
-            <div class="card-title">С этим товаром покупают</div>
+            <h2 class="card-title">С этим товаром покупают</h2>
             <a class="card-title-link" href="catalog.html">В каталог</a>
         </div>
         <div class="card__item">
@@ -271,12 +282,12 @@
                     <div class="card-basket__img">
                         <img class="img-card" src="img/card/image%207.jpg" alt="">
                     </div>
-                    <div class="card-basket__title">Доска Бильгоу для мозжечковой стимуляции</div>
-                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <h4 class="card-basket__title">Доска Бильгоу для мозжечковой стимуляции</h4>
+                    <p class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</p>
                     <div class="card-basket__body">
                         <div class="card-basket__price">
-                            <div class="card-basket__price-new">2 490 р.</div>
-                            <div class="card-basket__price-old">3 470 р.</div>
+                            <p class="card-basket__price-new">2 490 р.</p>
+                            <p class="card-basket__price-old">3 470 р.</p>
                         </div>
                         <div class="product__quantity"></div>
                         <button class="card-form__btn"
@@ -286,7 +297,7 @@
                         data-sb-product-quantity="1"
                         data-sb-product-img="img/card/image%207.jpg">Купить</button>
                     </div>
-                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                    <a href="card-product.html" class="card__btn">Подробнее</a>
                 </div>
             </div>
             <div class="card__colum">
@@ -294,12 +305,12 @@
                     <div class="card-basket__img">
                         <img class="img-card" src="img/card/image%206.jpg" alt="">
                     </div>
-                    <div class="card-basket__title">Набор мячей с фиксацией на одежде</div>
-                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <h4 class="card-basket__title">Набор мячей с фиксацией на одежде</h4>
+                    <p class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</p>
                     <div class="card-basket__body">
                         <div class="card-basket__price">
-                            <div class="card-basket__price-new">650 р.</div>
-                            <div class="card-basket__price-old">935 р.</div>
+                            <p class="card-basket__price-new">650 р.</p>
+                            <p class="card-basket__price-old">935 р.</p>
                         </div>
                         <div class="product__quantity"></div>
                         <button class="card-form__btn"
@@ -309,7 +320,7 @@
                         data-sb-product-quantity="1"
                         data-sb-product-img="img/card/image%206.jpg">Купить</button>
                     </div>
-                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                    <a href="card-product.html" class="card__btn">Подробнее</a>
                 </div>
             </div>
             <div class="card__colum">
@@ -317,12 +328,12 @@
                     <div class="card-basket__img">
                         <img class="img-card" src="img/card/image%205.jpg" alt="">
                     </div>
-                    <div class="card-basket__title">Мишень напольная цветная</div>
-                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <h4 class="card-basket__title">Мишень напольная цветная</h4>
+                    <p class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</p>
                     <div class="card-basket__body">
                         <div class="card-basket__price">
-                            <div class="card-basket__price-new">1 590 р.</div>
-                            <div class="card-basket__price-old">2 000 р.</div>
+                            <p class="card-basket__price-new">1 590 р.</p>
+                            <p class="card-basket__price-old">2 000 р.</p>
                         </div>
                         <div class="product__quantity"></div>
                         <button class="card-form__btn"
@@ -332,7 +343,7 @@
                         data-sb-product-quantity="1"
                         data-sb-product-img="img/card/image%205.jpg">Купить</button>
                     </div>
-                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                    <a href="card-product.html" class="card__btn">Подробнее</a>
                 </div>
             </div>
             <div class="card__colum">
@@ -340,12 +351,12 @@
                     <div class="card-basket__img">
                         <img class="img-card" src="img/card/image%204.jpg" alt="">
                     </div>
-                    <div class="card-basket__title">Сумка для тренажеров Бильгоу</div>
-                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <h4 class="card-basket__title">Сумка для тренажеров Бильгоу</h4>
+                    <p class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</p>
                     <div class="card-basket__body">
                         <div class="card-basket__price">
-                            <div class="card-basket__price-new">2 490 р.</div>
-                            <div class="card-basket__price-old">3000 р.</div>
+                            <p class="card-basket__price-new">2 490 р.</p>
+                            <p class="card-basket__price-old">3000 р.</p>
                         </div>
                         <div class="product__quantity"></div>
                         <button class="card-form__btn"
@@ -355,7 +366,7 @@
                         data-sb-product-quantity="1"
                         data-sb-product-img="img/card/image%204.jpg">Купить</button>
                     </div>
-                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                    <a href="card-product.html" class="card__btn">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -368,7 +379,7 @@
 <div class="card">
     <div class="container">
         <div class="card-title-body">
-            <div class="card-title">Похожие товары</div>
+            <h2 class="card-title">Похожие товары</h2>
             <a class="card-title-link" href="catalog.html">В каталог</a>
         </div>
         <div class="card__item">
@@ -377,12 +388,12 @@
                     <div class="card-basket__img">
                         <img class="img-card" src="img/card/image%207.jpg" alt="">
                     </div>
-                    <div class="card-basket__title">Доска Бильгоу для мозжечковой стимуляции</div>
-                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <h4 class="card-basket__title">Доска Бильгоу для мозжечковой стимуляции</h4>
+                    <p class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</p>
                     <div class="card-basket__body">
                         <div class="card-basket__price">
-                            <div class="card-basket__price-new">2 490 р.</div>
-                            <div class="card-basket__price-old">3 470 р.</div>
+                            <p class="card-basket__price-new">2 490 р.</p>
+                            <p class="card-basket__price-old">3 470 р.</p>
                         </div>
                         <div class="product__quantity"></div>
                         <button class="card-form__btn"
@@ -392,7 +403,7 @@
                         data-sb-product-quantity="1"
                         data-sb-product-img="img/card/image%207.jpg">Купить</button>
                     </div>
-                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                    <a href="card-product.html" class="card__btn">Подробнее</a>
                 </div>
             </div>
             <div class="card__colum">
@@ -400,12 +411,12 @@
                     <div class="card-basket__img">
                         <img class="img-card" src="img/card/image%206.jpg" alt="">
                     </div>
-                    <div class="card-basket__title">Набор мячей с фиксацией на одежде</div>
-                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <h4 class="card-basket__title">Набор мячей с фиксацией на одежде</h4>
+                    <p class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</p>
                     <div class="card-basket__body">
                         <div class="card-basket__price">
-                            <div class="card-basket__price-new">650 р.</div>
-                            <div class="card-basket__price-old">935 р.</div>
+                            <p class="card-basket__price-new">650 р.</p>
+                            <p class="card-basket__price-old">935 р.</p>
                         </div>
                         <div class="product__quantity"></div>
                         <button class="card-form__btn"
@@ -415,7 +426,7 @@
                         data-sb-product-quantity="1"
                         data-sb-product-img="img/card/image%206.jpg">Купить</button>
                     </div>
-                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                    <a href="card-product.html" class="card__btn">Подробнее</a>
                 </div>
             </div>
             <div class="card__colum">
@@ -423,12 +434,12 @@
                     <div class="card-basket__img">
                         <img class="img-card" src="img/card/image%205.jpg" alt="">
                     </div>
-                    <div class="card-basket__title">Мишень напольная цветная</div>
-                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <h4 class="card-basket__title">Мишень напольная цветная</h4>
+                    <p class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</p>
                     <div class="card-basket__body">
                         <div class="card-basket__price">
-                            <div class="card-basket__price-new">1 590 р.</div>
-                            <div class="card-basket__price-old">2 000 р.</div>
+                            <p class="card-basket__price-new">1 590 р.</p>
+                            <p class="card-basket__price-old">2 000 р.</p>
                         </div>
                         <div class="product__quantity"></div>
                         <button class="card-form__btn"
@@ -438,7 +449,7 @@
                         data-sb-product-quantity="1"
                         data-sb-product-img="img/card/image%205.jpg">Купить</button>
                     </div>
-                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                    <a href="card-product.html" class="card__btn">Подробнее</a>
                 </div>
             </div>
             <div class="card__colum">
@@ -446,12 +457,12 @@
                     <div class="card-basket__img">
                         <img class="img-card" src="img/card/image%204.jpg" alt="">
                     </div>
-                    <div class="card-basket__title">Сумка для тренажеров Бильгоу</div>
-                    <div class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</div>
+                    <h4 class="card-basket__title">Сумка для тренажеров Бильгоу</h4>
+                    <p class="card-basket__subtitle">Тренажеров для мозжечковой стимуляции.</p>
                     <div class="card-basket__body">
                         <div class="card-basket__price">
-                            <div class="card-basket__price-new">2 490 р.</div>
-                            <div class="card-basket__price-old">3000 р.</div>
+                            <p class="card-basket__price-new">2 490 р.</p>
+                            <p class="card-basket__price-old">3000 р.</p>
                         </div>
                         <div class="product__quantity"></div>
                         <button class="card-form__btn"
@@ -461,7 +472,7 @@
                         data-sb-product-quantity="1"
                         data-sb-product-img="img/card/image%204.jpg">Купить</button>
                     </div>
-                    <a href="card-product.html" class="card__btn" type="submit">Подробнее</a>
+                    <a href="card-product.html" class="card__btn">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -475,7 +486,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="footer-top_item">
-                <div class="footer-top_title">Новинки и акции у вас в почте</div>
+                <p class="footer-top_title">Новинки и акции у вас в почте</p>
                 <form class="form-footer" action="/" method="post">
                     <div class="form__group-footer">
                         <input class="form__input-footer" name="search" type="text"  placeholder="Ваш e-mail адрес">
@@ -484,7 +495,7 @@
                 </form>
                 <div class="footer-top_body">
                     <a class="header-center__tel" href="tel:89009001234">8 (800) 55 48 97</a>
-                    <div class="footer-top_text">Звонок бесплатный</div>
+                    <p class="footer-top_text">Звонок бесплатный</p>
                 </div>
                 <button class="footer-top_btn" data-modal="#modal_question">Задать вопрос</button>
                 <button class="footer-top_btn" data-modal="#modal_call">Заказать звонок</button>
@@ -553,7 +564,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="footer-bottom_item">
-                <div class="footer-bottom_text">Политика обработки персональных данных</div>
+                <p class="footer-bottom_text">Политика обработки персональных данных</p>
                 <div class="footer-bottom_img">
                     <div class="footer-bottom_card">
                         <img src="img/footer/mir.svg" alt="">
@@ -565,7 +576,7 @@
                         <img src="img/footer/visa.svg" alt="">
                     </div>
                 </div>
-                <div class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</div>
+                <p class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</p>
             </div>
         </div>
     </div>
@@ -579,7 +590,7 @@
         <div class="container">
             <div class="footer-top_item">
                 <div class="footer-top_item-tablet">
-                    <div class="footer-top_title footer-top_title-tablet">Новинки и акции у вас в почте</div>
+                    <p class="footer-top_title footer-top_title-tablet">Новинки и акции у вас в почте</p>
                     <form class="form-footer" action="/" method="post">
                         <div class="form__group-footer">
                             <input class="form__input-footer" name="search" type="text"  placeholder="Ваш e-mail адрес">
@@ -590,7 +601,7 @@
                 <div class="footer-top_body">
                     <div class="footer-top_body-tablet">
                         <a class="header-center__tel" href="tel:89009001234">8 (800) 55 48 97</a>
-                        <div class="footer-top_text footer-top_text-tablet">Звонок бесплатный</div>
+                        <p class="footer-top_text footer-top_text-tablet">Звонок бесплатный</p>
                     </div>
                     <button class="footer-top_btn footer-top_btn-tablet" data-modal="#modal_question">Задать вопрос</button>
                     <button class="footer-top_btn footer-top_btn-tablet" data-modal="#modal_call">Заказать звонок</button>
@@ -660,7 +671,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="footer-bottom_item">
-                <div class="footer-bottom_text">Политика обработки персональных данных</div>
+                <p class="footer-bottom_text">Политика обработки персональных данных</p>
                 <div class="footer-bottom_img">
                     <div class="footer-bottom_card">
                         <img src="img/footer/mir.svg" alt="">
@@ -672,7 +683,7 @@
                         <img src="img/footer/visa.svg" alt="">
                     </div>
                 </div>
-                <div class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</div>
+                <p class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</p>
             </div>
         </div>
     </div>
@@ -686,7 +697,7 @@
         <div class="container">
             <div class="footer-top_item footer-top_item-mobil">
                 <div class="footer-top_item-tablet">
-                    <div class="footer-top_title footer-top_title-mobil">Новинки и акции у вас в почте</div>
+                    <p class="footer-top_title footer-top_title-mobil">Новинки и акции у вас в почте</p>
                     <form class="form-footer" action="/" method="post">
                         <div class="form__group-footer form__group-footer-mobil">
                             <input class="form__input-footer form__input-footer-mobil" name="search" type="text"  placeholder="Ваш e-mail адрес">
@@ -697,7 +708,7 @@
                 <div class="footer-top_body">
                     <div class="footer-top_body2">
                         <a class="header-center__tel footer--tel" href="tel:89009001234">8 (800) 55 48 97</a>
-                        <div class="footer-top_text footer-top_text-mobil">Звонок бесплатный</div>
+                        <p class="footer-top_text footer-top_text-mobil">Звонок бесплатный</p>
                     </div>
                     <button class="footer-top_btn footer-top_btn-mobil" data-modal="#modal_question">Задать вопрос</button>
                     <button class="footer-top_btn footer-top_btn-mobil" data-modal="#modal_call">Заказать звонок</button>
@@ -711,7 +722,7 @@
                 <div class="footer-center_img">
                     <img src="img/footer/logo-footer.svg" alt="">
                 </div>
-            </div>
+                </div>
             <div class="footer-center_item">
                 <div class="footer-center_colum">
                     <div class="footer-center_body-mobil">
@@ -774,8 +785,8 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="footer-bottom_item">
-                <div class="footer-bottom_text">Политика обработки персональных данных</div>
-                <div class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</div>
+                <p class="footer-bottom_text">Политика обработки персональных данных</p>
+                <p class="footer-bottom_text">Copyright © 2021 ООО “Интернет проекты”</p>
             </div>
         </div>
     </div>
@@ -784,11 +795,11 @@
 
 <!--Modal-User--->
 
-<div class="modal" id="modal_hire_me">
+    <div class="modal" id="modal_hire_me">
         <div class="modal__dialog">
             <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
             <div class="modal__body">
-                <div class="modal_title">Авторизация</div>
+                <h3 class="modal_title">Авторизация</h3>
                 <form class="modal__form" action="/" method="post">
                     <div class="modal__form__group">
                         <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваш логин">
@@ -800,8 +811,8 @@
                         <button class="modal__btn" type="submit">Войти на сайт</button>
                         <a href="#" class="modal-password">Забыли пароль?</a>
                     </div>
-                    <div class="modal_text" data-modal="#modal_hire_me">Нет аккаунта? <a class="modal-password" href="#" data-modal="#modal_registration"> Зарегистрируйтесь</a></div>
-                    <div class="modal_subtext">Войти через:</div>
+                    <p class="modal_text" data-modal="#modal_hire_me">Нет аккаунта? <a class="modal-password" href="#" data-modal="#modal_registration"> Зарегистрируйтесь</a></p>
+                    <p class="modal_subtext">Войти через:</p>
                     <div class="modal_social">
                         <a href="#" class="modal_icon" target="_blank">
                             <img src="img/social/twitter.svg" alt="">
@@ -831,7 +842,7 @@
         <div class="modal__dialog">
             <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
             <div class="modal__body">
-                <div class="modal_title">Регистрация</div>
+                <h3 class="modal_title">Регистрация</h3>
                 <form class="modal__form" action="/" method="post">
                     <div class="modal__form__group">
                         <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваш логин">
@@ -845,7 +856,7 @@
                     <div class="modal-btn_body modal__btn-registration">
                         <button class="modal__btn" type="submit">Регистрация </button>
                     </div>
-                    <div class="modal_subtext">Войти через:</div>
+                    <p class="modal_subtext">Войти через:</p>
                     <div class="modal_social">
                         <a href="#" class="modal_icon" target="_blank">
                             <img src="img/social/twitter.svg" alt="">
@@ -871,11 +882,11 @@
 
 <!--Modal-question--->
 
-<div class="modal" id="modal_question">
+    <div class="modal" id="modal_question">
         <div class="modal__dialog">
             <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
             <div class="modal__body">
-                <div class="modal_title">Задать вопрос</div>
+                <h3 class="modal_title">Задать вопрос</h3>
                 <form class="modal__form" action="/" method="post">
                     <div class="modal__form__group">
                         <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваше имя">
@@ -901,7 +912,7 @@
         <div class="modal__dialog">
             <button class="modal__close" type="button" data-close><img src="img/modal-close.svg" alt="Close"> </button>
             <div class="modal__body">
-                <div class="modal_title">Заказать звонок</div>
+                <h3 class="modal_title">Заказать звонок</h3>
                 <form class="modal__form" action="/" method="post">
                     <div class="modal__form__group">
                         <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваше имя">
@@ -927,8 +938,8 @@
                 <div class="modal_image">
                     <img src="img/Vector111.svg" alt="">
                 </div>
-                <div class="modal_title">Вы успешно подписались на рассылку</div>
-                <div class="modal_subtitle">Проверьте вашу почту, и перейдите по ссылки для подтверждения</div>
+                <h4 class="modal_title">Вы успешно подписались на рассылку</h4>
+                <p class="modal_subtitle">Проверьте вашу почту, и перейдите по ссылки для подтверждения</p>
             </div>
         </div>
     </div>
@@ -938,13 +949,9 @@
     <script src="js/app.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/slick.min.js"></script>
-
-    <link rel="stylesheet" href="css/smartbasket.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="./js/smartbasket.min.js"></script>
 
     <div class="smart-basket__wrapper"></div>
-
-    <script src="./js/smartbasket.min.js"></script>
 
 </body>
 </html>
