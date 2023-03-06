@@ -219,7 +219,7 @@ $('.js-tab-trigger').click(function() {
 /* Корзина товаров */
 $(function () {
     $('.smart-basket__wrapper').smbasket({
-        productElement: 'card-basket',
+        productElement: 'card-basket, .card-basket__body',
         buttonAddToBasket: 'card-form__btn',
         productPrice: 'product__price-number',
         productSize: 'product__size-element',
