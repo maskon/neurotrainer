@@ -98,7 +98,6 @@ h6 {
 body {
     margin: 0;
     font-family: 'Blogger Sans', sans-serif;
-    font-display: swap;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -449,7 +448,7 @@ body.no-scroll {
     .burger {
         display: block;
     }
-    
+
     .header-bottom__menu {
         display: block;
     }
@@ -597,7 +596,7 @@ body.no-scroll {
         margin: 0 20px;
         padding: 15px 5px;
     }
-    
+
     .header-bottom__link:first-child {
         font-weight: 700;
         font-size: 36px;
@@ -663,13 +662,13 @@ body.no-scroll {
         line-height: 26px;
         margin: 0 8px;
     }
-    
+
     .header-bottom__link:first-child {
         font-weight: 700;
         font-size: 30px;
         margin-bottom: 5px;
     }
-    
+
     .header-bottom__item {
         top: 130px;
     }
@@ -677,7 +676,7 @@ body.no-scroll {
     .header-bottom__item.active {
         top: 130px;
     }
-    
+
     .header-bottom .burger2-close {
         width: 20px;
         height: 20px;
@@ -703,7 +702,7 @@ body.no-scroll {
 }
 
 .intro__item-left {
-    background-image: url(../img/intro/%D1%84%D0%BE%D0%BD.png);
+    background-image: url(../img/intro/fon.jpg);
     background-size: 100%;
     border-radius: 10px;
     height: 100%;
@@ -865,7 +864,7 @@ body.no-scroll {
         align-items: center;
         margin: 0 10px 30px 10px;
     }
-    
+
     .left_tytle {
         font-size: 40px;
         margin: 50px 0 45px 0;
@@ -882,23 +881,23 @@ body.no-scroll {
     .colum-right_item, .colum-right_item-2  {
         margin: 0 0 10px 0;
     }
-    
+
     .left_img-mobil {
         display: block;
         height: 300px;
     }
-    
+
     .left_img-mobil img {
         height: 300px;
     }
 }
 
 @media (max-width: 450px) {
-    
+
     .intro {
         margin: 223px 0 0 0;
     }
-    
+
     .left_tytle {
         margin: 17px 0 35px 0;
     }
@@ -1466,6 +1465,10 @@ body.no-scroll {
     color: #F07FAE;
 }
 
+.footer-right li:hover {
+    color: #FFFFFF;
+}
+
 .social-footer {
     margin-top: 15px;
 }
@@ -1602,7 +1605,7 @@ body.no-scroll {
 
 
 @media (max-width: 1081px) {
-    
+
     .footer-top_title {
         display: none;
     }
@@ -1617,7 +1620,7 @@ body.no-scroll {
     .footer {
         display: none;
     }
-    
+
     .footer-top_title {
         display: block;
     }
@@ -2579,18 +2582,18 @@ body.no-scroll {
     .btn-card-basket {
         margin-top: 10px;
     }
-    
+
     .slider-for_body {
         height: 250px;
     }
 }
 
 @media (max-width: 415px) {
-    
+
     .card-product {
         margin: 220px 0 35px 0;
     }
-    
+
     .catalog__link_body {
         font-size: 13px;
         line-height: 15px;
@@ -2601,6 +2604,6 @@ body.no-scroll {
         height: auto;
         object-fit: cover;
     }
-    
-    
+
+
 }
