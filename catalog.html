@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <!--<link href = "fonts/stylesheet.css" rel = "stylesheet" type = "text/css"/>--->
+    <!--<link href = "fonts/stylesheet.css" rel = "stylesheet" type = "text/css"/>-->
     <link rel="stylesheet" href="css/smartbasket.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
     
@@ -14,14 +14,32 @@
     
     <title>Нейротренажеры</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+   
     <style>
         @font-face {
-            font-family: "Blogger Sans";
-            font-display: swap;
-            src: local("Blogger Sans"), url("fonts/BloggerSans.woff2") format("woff2");
-            font-weight: 400;
+            font-family: 'Blogger Sans';
+            src: url('BloggerSans-Bold.eot');
+            src: local('Blogger Sans Bold'), local('BloggerSans-Bold'),
+                url('fonts/BloggerSans-Bold.eot?#iefix') format('embedded-opentype'),
+                url('fonts/BloggerSans-Bold.woff2') format('woff2'),
+                url('fonts/BloggerSans-Bold.woff') format('woff'),
+                url('fonts/BloggerSans-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
         }
+
+        @font-face {
+            font-family: 'Blogger Sans';
+            src: url('BloggerSans.eot');
+            src: local('Blogger Sans'), local('BloggerSans'),
+                url('fonts/BloggerSans.eot?#iefix') format('embedded-opentype'),
+                url('fonts/BloggerSans.woff2') format('woff2'),
+                url('fonts/BloggerSans.woff') format('woff'),
+                url('fonts/BloggerSans.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
     </style>
 </head>
 <body>
