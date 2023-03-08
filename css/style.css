@@ -575,6 +575,7 @@ body.no-scroll {
         width: 100%;
         flex-direction: column;
         background: #fff;
+        z-index: 20000;
         height: 100%;
         overflow: auto;
         top: 150px;
@@ -2333,7 +2334,6 @@ body.no-scroll {
 .slider-for .slick-arrow {
     position: absolute;
     top: 85%;
-    z-index: 1000;
     font-size: 0;
     width: 30px;
     height: 30px;
@@ -2343,12 +2343,14 @@ body.no-scroll {
     left: 40%;
     background: url(../img/card-product/Vector.svg) center no-repeat;
     background-size: 50%;
+    z-index: 1000;
 }
 
 .slider-for .slick-arrow.slick-next{
     right: 40%;
     background: url(../img/card-product/Vector1.svg) center no-repeat;
     background-size: 50%;
+    z-index: 999;
 }
 
 
@@ -2487,11 +2489,6 @@ body.no-scroll {
         width: 500px;
         height: 400px;
     }
-
-    .slider-for_img {
-        width: 400px;
-        height: 200px;
-    }
 }
 
 @media (max-width: 920px) {
@@ -2558,6 +2555,11 @@ body.no-scroll {
         align-items: center;
     }
 
+    .slider-for_img {
+        width: 470px;
+        height: 250px;
+    }
+
     .slider-for .slick-arrow {
         top: 85%;
     }
@@ -2585,6 +2587,11 @@ body.no-scroll {
 
     .slider-for_body {
         height: 250px;
+    }
+
+    .slider-for_img {
+        width: 400px;
+        height: 200px;
     }
 }
 
