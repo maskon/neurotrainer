@@ -2603,7 +2603,7 @@ body.no-scroll {
 
     .slider-for_img {
         width: 400px;
-        height: 200px;
+        height: 210px;
     }
 }
 
@@ -2616,6 +2616,11 @@ body.no-scroll {
     .catalog__link_body {
         font-size: 13px;
         line-height: 15px;
+    }
+
+    .slider-for_img {
+        width: 100%;
+        height: auto;
     }
     
     .slider-for .slick-arrow.slick-prev {
