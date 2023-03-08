@@ -2617,12 +2617,6 @@ body.no-scroll {
         font-size: 13px;
         line-height: 15px;
     }
-
-    .slider-for_img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
     
     .slider-for .slick-arrow.slick-prev {
         left: 38%;
