@@ -119,7 +119,7 @@ body.no-scroll {
     display: none;
 }
 
-/*Header*/
+/* Header */
 
 .header {
     width: 100%;
@@ -204,6 +204,10 @@ body.no-scroll {
     margin: 0 10px;
 }
 
+.form__input {
+    width: 100%;
+}
+
 .form__btn {
     background: #fff;
 }
@@ -277,6 +281,11 @@ body.no-scroll {
     padding: 10px 14px;
 }
 
+.header-center__user:active {
+    position: relative;
+    top: 1px;
+}
+
 .user-mobil, .user-mobil-img {
     display: none;
 }
@@ -290,6 +299,11 @@ body.no-scroll {
     width: 40px;
     height: 68px;
     background: #fff;
+}
+
+.alert-button:active {
+    position: relative;
+    top: 1px;
 }
 
 .alert-button span {
@@ -966,8 +980,8 @@ body.no-scroll {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 0 30px 0;
-    width: 220px;
     height: 150px;
 }
 
@@ -1037,7 +1051,7 @@ body.no-scroll {
 }
 
 .card__btn {
-    width: 230px;
+    width: 100%;
     height: 40px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
@@ -1054,6 +1068,12 @@ body.no-scroll {
 .card__btn:hover {
     background: #e6e6e6;
     color: #080000;
+}
+
+.card__btn:active, .card-form__btn:active, .footer-top_btn:active {
+    position: relative;
+    top: 2px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -1688,6 +1708,10 @@ body.no-scroll {
     overflow: hidden;
 }
 
+.filter {
+    flex: 0 0 338px;
+}
+
 .filter_title {
     font-weight: 700;
     font-size: 20px;
@@ -1767,12 +1791,13 @@ body.no-scroll {
 
 /* стили при наведении курсора на checkbox */
 .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
-    border-color: #b3d7ff;
+    border-color: #333333;
+    transition-duration: .2s;
 }
 /* стили для активного состояния чекбокса (при нажатии на него) */
 .custom-checkbox:not(:disabled):active+label::before {
-    background-color: #b3d7ff;
-    border-color: #b3d7ff;
+    background-color: #F07FAE;
+    border-color: #F07FAE;
 }
 /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus+label::before {
@@ -1780,7 +1805,7 @@ body.no-scroll {
 }
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 .custom-checkbox:focus:not(:checked)+label::before {
-    border-color: #80bdff;
+    border-color: #333333;
 }
 /* стили для чекбокса, находящегося в состоянии disabled */
 .custom-checkbox:disabled+label::before {
@@ -1814,10 +1839,6 @@ body.no-scroll {
 
 .filters-price_input {
     width: 60px;
-}
-
-.filter {
-    flex: 0 0 338px;
 }
 
 .content__nav {
@@ -1890,6 +1911,10 @@ body.no-scroll {
 
 .form__group-search-mobil {
     margin: 0;
+}
+
+.catalog .card__colum {
+    flex: 1 1 25%;
 }
 
 
