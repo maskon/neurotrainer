@@ -3,5 +3,4 @@
 
 https://maskon.github.io/neurotrainer
 
-
-![work_with](https://user-images.githubusercontent.com/126991331/229303753-fa2c5282-8615-4d67-9997-69d65280cdec.jpg)
+![642860e077197b64d01de9ae](https://user-images.githubusercontent.com/126991331/229304034-060f97d2-ccec-4cc2-8e56-8d67a3b64571.jpg)
