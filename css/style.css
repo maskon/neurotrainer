@@ -980,7 +980,6 @@ body.no-scroll {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin: 0 0 30px 0;
     height: 150px;
 }
@@ -2138,6 +2137,11 @@ body.no-scroll {
     color: #FFFFFF;
     margin: 5px 10px 0 0;
     transition-duration: .3s;
+}
+
+.modal__btn:hover {
+    background: #ff0067;
+    color: #ebeaea;
 }
 
 .modal__btn-registration {
