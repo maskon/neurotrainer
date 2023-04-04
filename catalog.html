@@ -7,14 +7,14 @@
     <!--<link href = "fonts/stylesheet.css" rel = "stylesheet" type = "text/css"/>-->
     <link rel="stylesheet" href="css/smartbasket.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
-    
+
     <meta name="description" content="Описание страницы">
-    <meta name="keywords" content="Ключевые слова для яндекс"/>
+    <meta name="keywords" content="Ключевые слова для яндекс">
     <meta name="googlebot" content="notranslate">
-    
+
     <title>Нейротренажеры</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+
     <style>
         @font-face {
             font-family: 'Blogger Sans';
@@ -41,12 +41,12 @@
             font-style: normal;
             font-display: swap;
         }
-        
+
     </style>
 </head>
 <body>
 
-<!--Header--->
+<!--Header-->
 
     <header class="header" id="header">
         <div class="container">
@@ -131,16 +131,16 @@
             </div>
             <div class="header-bottom">
                 <nav class="header-bottom__item" id="nav-2">
-                    <div class="header-bottom__menu">
+                     <div class="header-bottom__menu">
                         <div class="header-bottom__link">Каталог товаров</div>
-                        <button class="modal__close modal__close-mobil" type="button" id="burger-2"><img class="burger2-close" src="img/modal-close.svg" alt="Close"></button>
+                        <button class="modal__close modal__close-mobil" type="button"><img class="burger2-close" src="img/modal-close.svg" alt="Close"></button>
                     </div>
-                    <a href="#" class="header-bottom__link" id="nav__link-2">Мозжечковая стимуляция</a>
-                    <a href="#" class="header-bottom__link" id="nav__link-2">Межполушарные доски</a>
-                    <a href="#" class="header-bottom__link" id="nav__link-2">Нейрокосички</a>
-                    <a href="#" class="header-bottom__link" id="nav__link-2">Балансиры</a>
-                    <a href="#" class="header-bottom__link" id="nav__link-2">Нейровосьмерки</a>
-                    <a href="#" class="header-bottom__link" id="nav__link-2">Разное</a>
+                    <a href="#" class="header-bottom__link">Мозжечковая стимуляция</a>
+                    <a href="#" class="header-bottom__link">Межполушарные доски</a>
+                    <a href="#" class="header-bottom__link">Нейрокосички</a>
+                    <a href="#" class="header-bottom__link">Балансиры</a>
+                    <a href="#" class="header-bottom__link">Нейровосьмерки</a>
+                    <a href="#" class="header-bottom__link">Разное</a>
                 </nav>
                 <div class="burger-2__item">
                     <button class="burger-2" type="button" id="burger-2"><span class="burger__item-2">Каталог товаров</span></button>
@@ -150,7 +150,7 @@
     </header>
 
 
-<!--Catalog--->
+<!--Catalog-->
 
 <div class="catalog">
     <div class="container">
@@ -227,11 +227,11 @@
                         <div class="filters-price_inputs">
                             <span class="filters-price_text">От</span>
                             <label class="filters-price_label">
-                                <input type="namber" id="minCost" min="0" max="100000" placeholder="1000 ₽" class="filters-price_input" id="input-1">
+                                <input type="number" id="minCost" min="0" max="100000" placeholder="1000 ₽" class="filters-price_input">
                             </label>
                             <span class="filters-price_text">До</span>
                             <label class="filters-price_label">
-                                <input type="namber" id="maxCost" min="0" max="100000" placeholder="8000 ₽" class="filters-price_input">
+                                <input type="number" id="maxCost" min="0" max="100000" placeholder="8000 ₽" class="filters-price_input">
                             </label>
                         </div>
                         <div class="filters-btn_item">
@@ -532,7 +532,7 @@
 </div>
 
 
-<!--Footer--->
+<!--Footer-->
 
 <footer class="footer">
     <div class="footer-top">
@@ -564,7 +564,8 @@
                 </div>
                 <div class="footer-center_colum">
                     <div class="footer-center_body">
-                        <ul class="footer-center_title">Информация
+                        <div class="footer-center_title">Информация</div>
+                        <ul>
                             <li><a href="#">Главная</a></li>
                             <li><a href="#">Кредит</a></li>
                             <li><a href="#">Возврат</a></li>
@@ -575,7 +576,8 @@
                 </div>
                 <div class="footer-center_colum">
                     <div class="footer-center_body">
-                        <ul class="footer-center_title">Вебинар
+                       <div class="footer-center_title">Вебинар</div>
+                        <ul>
                             <li><a href="#">Психолог</a></li>
                             <li><a href="#">Логопед</a></li>
                             <li><a href="#">Дефектолог</a></li>
@@ -584,7 +586,8 @@
                 </div>
                 <div class="footer-center_colum">
                     <div class="footer-center_body">
-                        <ul class="footer-center_title">Новости
+                       <div class="footer-center_title">Новости</div>
+                        <ul>
                             <li><a href="#">Акции</a></li>
                             <li><a href="#">Блог</a></li>
                         </ul>
@@ -592,7 +595,8 @@
                 </div>
                 <div class="footer-center_colum">
                     <div class="footer-center_body">
-                        <ul class="footer-center_title footer-right">Контакты
+                        <div class="footer-center_title footer-right">Контакты</div>
+                        <ul>
                             <li>Время работы: 07:00 - 19:00 по МСК</li>
                             <li><a href="#">info@neyro-t.ru</a></li>
                             <li>Свердловская обл., г.Новоуральск, ул. Фрунзе оф.3</li>
@@ -635,7 +639,7 @@
 </footer>
 
 
-<!--Footer tablet--->
+<!--Footer tablet-->
 
 <footer class="footer-tablet">
     <div class="footer-top">
@@ -671,7 +675,8 @@
             <div class="footer-center_item">
                 <div class="footer-center_colum">
                     <div class="footer-center_body">
-                        <ul class="footer-center_title">Информация
+                       <div class="footer-center_title">Информация</div>
+                        <ul>
                             <li><a href="#">Главная</a></li>
                             <li><a href="#">Кредит</a></li>
                             <li><a href="#">Возврат</a></li>
@@ -682,7 +687,8 @@
                 </div>
                 <div class="footer-center_colum">
                     <div class="footer-center_body">
-                        <ul class="footer-center_title">Вебинар
+                       <div class="footer-center_title">Вебинар</div>
+                        <ul>
                             <li><a href="#">Психолог</a></li>
                             <li><a href="#">Логопед</a></li>
                             <li><a href="#">Дефектолог</a></li>
@@ -691,7 +697,8 @@
                 </div>
                 <div class="footer-center_colum">
                     <div class="footer-center_body">
-                        <ul class="footer-center_title">Новости
+                       <div class="footer-center_title">Новости</div>
+                        <ul>
                             <li><a href="#">Акции</a></li>
                             <li><a href="#">Блог</a></li>
                         </ul>
@@ -699,7 +706,8 @@
                 </div>
                 <div class="footer-center_colum">
                     <div class="footer-center_body">
-                        <ul class="footer-center_title footer-right">Контакты
+                        <div class="footer-center_title footer-right">Контакты</div>
+                        <ul>
                             <li>Время работы: 07:00 - 19:00 по МСК</li>
                             <li><a href="#">info@neyro-t.ru</a></li>
                             <li>Свердловская обл., г.Новоуральск, ул. Фрунзе оф.3</li>
@@ -742,7 +750,7 @@
 </footer>
 
 
-<!--Footer mobil--->
+<!--Footer mobil-->
 
 <footer class="footer-mobil">
     <div class="footer-top">
@@ -778,7 +786,8 @@
             <div class="footer-center_item">
                 <div class="footer-center_colum">
                     <div class="footer-center_body-mobil">
-                        <ul class="footer-center_title">Информация
+                       <div class="footer-center_title">Информация</div>
+                        <ul>
                             <li><a href="#">Главная</a></li>
                             <li><a href="#">Кредит</a></li>
                             <li><a href="#">Возврат</a></li>
@@ -787,7 +796,8 @@
                         </ul>
                     </div>
                     <div class="footer-center_body">
-                        <ul class="footer-center_title">Вебинар
+                       <div class="footer-center_title">Вебинар</div>
+                        <ul>
                             <li><a href="#">Психолог</a></li>
                             <li><a href="#">Логопед</a></li>
                             <li><a href="#">Дефектолог</a></li>
@@ -796,13 +806,15 @@
                 </div>
                 <div class="footer-center_colum">
                     <div class="footer-center_body-mobil">
-                        <ul class="footer-center_title">Новости
+                       <div class="footer-center_title">Новости</div>
+                        <ul>
                             <li><a href="#">Акции</a></li>
                             <li><a href="#">Блог</a></li>
                         </ul>
                     </div>
                     <div class="footer-center_body">
-                        <ul class="footer-center_title footer-right">Контакты
+                       <div class="footer-center_title footer-right">Контакты</div>
+                        <ul>
                             <li>Время работы: 07:00 - 19:00 по МСК</li>
                             <li><a href="#">info@neyro-t.ru</a></li>
                             <li>Свердловская обл., г.Новоуральск, ул. Фрунзе оф.3</li>
@@ -845,7 +857,7 @@
 </footer>
 
 
-<!--Modal-User--->
+<!--Modal-User-->
 
     <div class="modal" id="modal_hire_me">
         <div class="modal__dialog">
@@ -854,10 +866,10 @@
                 <h3 class="modal_title">Авторизация</h3>
                 <form class="modal__form" action="/" method="post">
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваш логин">
+                        <input class="form__input-modal" name="login" type="text" placeholder="Ваш логин">
                     </div>
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="input-tel" type="password" id="input-email" placeholder="Ваш пароль">
+                        <input class="form__input-modal" name="input-tel" type="password" placeholder="Ваш пароль">
                     </div>
                     <div class="modal-btn_body">
                         <button class="modal__btn" type="submit">Войти на сайт</button>
@@ -888,7 +900,7 @@
     </div>
 
 
-<!--Modal-registration--->
+<!--Modal-registration-->
 
     <div class="modal" id="modal_registration">
         <div class="modal__dialog">
@@ -897,13 +909,13 @@
                 <h3 class="modal_title">Регистрация</h3>
                 <form class="modal__form" action="/" method="post">
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваш логин">
+                        <input class="form__input-modal" name="login" type="text" placeholder="Ваш логин">
                     </div>
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="input-tel" type="password" id="input-email" placeholder="Ваш пароль">
+                        <input class="form__input-modal" name="input-tel" type="password" placeholder="Ваш пароль">
                     </div>
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="input-tel" type="password" id="input-email" placeholder="Повторите пароль">
+                        <input class="form__input-modal" name="input-tel" type="password" placeholder="Повторите пароль">
                     </div>
                     <div class="modal-btn_body modal__btn-registration">
                         <button class="modal__btn" type="submit">Регистрация </button>
@@ -932,7 +944,7 @@
     </div>
 
 
-<!--Modal-question--->
+<!--Modal-question-->
 
     <div class="modal" id="modal_question">
         <div class="modal__dialog">
@@ -941,13 +953,13 @@
                 <h3 class="modal_title">Задать вопрос</h3>
                 <form class="modal__form" action="/" method="post">
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваше имя">
+                        <input class="form__input-modal" name="login" type="text" placeholder="Ваше имя">
                     </div>
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваш email">
+                        <input class="form__input-modal" name="login" type="text" placeholder="Ваш email">
                     </div>
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Завайте ваш вопрос?">
+                        <input class="form__input-modal" name="login" type="text" placeholder="Завайте ваш вопрос?">
                     </div>
                     <div class="modal-btn_body modal__btn-registration">
                         <button class="modal__btn" type="submit">Задать вопрос</button>
@@ -958,7 +970,7 @@
     </div>
 
 
-<!--Modal-question--->
+<!--Modal-question-->
 
     <div class="modal" id="modal_call">
         <div class="modal__dialog">
@@ -967,10 +979,10 @@
                 <h3 class="modal_title">Заказать звонок</h3>
                 <form class="modal__form" action="/" method="post">
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Ваше имя">
+                        <input class="form__input-modal" name="login" type="text" placeholder="Ваше имя">
                     </div>
                     <div class="modal__form__group">
-                        <input class="form__input-modal" name="login" type="text" id="input-login" placeholder="Номер телефона">
+                        <input class="form__input-modal" name="login" type="text" placeholder="Номер телефона">
                     </div>
                     <div class="modal-btn_body modal__btn-registration">
                         <button class="modal__btn" type="submit">Заказать звонок</button>
@@ -981,7 +993,7 @@
     </div>
 
 
-<!--Modal-mailing list--->
+<!--Modal-mailing list-->
 
     <div class="modal" id="modal_list">
         <div class="modal__dialog">
@@ -996,7 +1008,7 @@
         </div>
     </div>
 
-<!--Javaskript--->
+<!--Javaskript-->
     <script src="js/app.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/slick.min.js"></script>
