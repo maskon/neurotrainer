@@ -16,7 +16,7 @@ $(function () {
 
     /* 02 */
 
-    $("#burger-2, #nav__link-2").on("click", function(event) {
+    $("#burger-2, #nav-2, modal__close-mobil").on("click", function(event) {
         event.preventDefault();
 
         $("#nav-2, #burger-2").toggleClass("active");
