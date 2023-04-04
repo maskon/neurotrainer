@@ -1394,14 +1394,14 @@ body.no-scroll {
     color: #FFFFFF;
 }
 
-.footer-top_item {
+.footer-top__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
 }
 
-.footer-top_title {
+.footer-top__title {
     font-weight: 700;
 }
 
@@ -1434,12 +1434,12 @@ body.no-scroll {
     color: #000;
 }
 
-.footer-top_text {
+.footer-top__text {
     font-size: 15px;
     line-height: 18px;
 }
 
-.footer-top_btn {
+.footer-top__btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
@@ -1453,7 +1453,7 @@ body.no-scroll {
     transition-property: background, color;
 }
 
-.footer-top_btn:hover {
+.footer-top__btn:hover {
     background: #fff;
     color: #000;
 }
@@ -1465,13 +1465,13 @@ body.no-scroll {
     color: #FFFFFF;
 }
 
-.footer-center_item {
+.footer-center__item {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
 }
 
-.footer-center_title {
+.footer-center__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
@@ -1486,13 +1486,17 @@ body.no-scroll {
     transition-property: color;
 }
 
+.footer-center li:hover {
+    color: #F07FAE;
+}
+
 .footer-right li {
     text-decoration: none;
     transition-duration: .3s;
     transition-property: color;
 }
 
-.footer-center li:hover {
+.footer-right li:hover:nth-child(2) {
     color: #F07FAE;
 }
 
@@ -1511,28 +1515,28 @@ body.no-scroll {
     color: #FFFFFF;
 }
 
-.footer-bottom_item {
+.footer-bottom__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
 }
 
-.footer-bottom_text {
+.footer-bottom__text {
     font-size: 14px;
     line-height: 15px;
 }
 
-.footer-bottom_img {
+.footer-bottom__img {
     display: flex;
     align-items: center;
 }
 
-.footer-bottom_card {
+.footer-bottom__card {
     margin-right: 10px;
 }
 
-.footer-bottom_card:last-child {
+.footer-bottom__card:last-child {
     margin-right: 0;
 }
 
@@ -1547,46 +1551,46 @@ body.no-scroll {
 
 /* Footer tablet */
 
-.footer-top_item-tablet {
+.footer-top__item-tablet {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.footer-top_title-tablet {
+.footer-top__title-tablet {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.footer-top_body-tablet {
+.footer-top__body-tablet {
     display: flex;
 
     align-items: center;
     margin-bottom: 10px;
 }
 
-.footer-top_text-tablet {
+.footer-top__text-tablet {
     margin:  0 15px 0 30px;
 }
 
-.footer-top_btn-tablet {
+.footer-top__btn-tablet {
     margin: 0 0 0 10px;
     width: 175px;
 }
 
-.footer-center_colum-tablet {
+.footer-center__colum-tablet {
     padding: 15px 0;
 }
 
 
 /* Footer mobil */
 
-.footer-top_item-mobil {
+.footer-top__item-mobil {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-top_title-mobil {
+.footer-top__title-mobil {
     text-align: start;
     margin: 0 5px 28px 0;
 }
@@ -1611,22 +1615,22 @@ body.no-scroll {
     border-radius: 5px;
 }
 
-.footer-top_text-mobil {
+.footer-top__text-mobil {
     margin: -3px 0 10px 0;
 }
 
-.footer-top_btn-mobil {
+.footer-top__btn-mobil {
     width: 150px;
     height: 35px;
     margin: 0 0 5px 5px;
 }
 
-.footer-center_body-mobil {
+.footer-center__body-mobil {
     padding-bottom: 10px;
     margin-right: 10px;
 }
 
-.footer-bottom_img-mobil {
+.footer-bottom__img-mobil {
     margin: 50px 0 10px 0;
 }
 
@@ -1637,7 +1641,7 @@ body.no-scroll {
 
 @media (max-width: 1081px) {
 
-    .footer-top_title {
+    .footer-top__title {
         display: none;
     }
 }
@@ -1652,7 +1656,7 @@ body.no-scroll {
         display: none;
     }
 
-    .footer-top_title {
+    .footer-top__title {
         display: block;
     }
 }
@@ -1670,7 +1674,7 @@ body.no-scroll {
 
 @media (max-width: 499px) {
 
-    .footer-top_text-mobil {
+    .footer-top__text-mobil {
         margin: -2px 0 30px 0;
     }
 }
@@ -2102,7 +2106,7 @@ body.no-scroll {
     transform: translateY(-3px);
 }
 
-.modal_title {
+.modal__title {
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
@@ -2134,7 +2138,7 @@ body.no-scroll {
     color: #F07FAE;
 }
 
-.modal-btn_body {
+.modal-btn__body {
     margin-bottom: 10px;
 }
 
@@ -2161,13 +2165,13 @@ body.no-scroll {
     text-align: center;
 }
 
-.modal_text {
+.modal__text {
     color: #707070;
     text-align: center;
     margin: 20px;
 }
 
-.modal_subtext {
+.modal__subtext {
     font-weight: 700;
     font-size: 20px;
     line-height: 18px;
@@ -2176,21 +2180,21 @@ body.no-scroll {
     margin-bottom: 15px;
 }
 
-.modal_social {
+.modal__social {
     display: flex;
     justify-content: center;
 }
 
-.modal_icon {
+.modal__icon {
     margin: 0 5px;
 }
 
-.modal_image {
+.modal__image {
     text-align: center;
     margin: 80px 0 -25px 0;
 }
 
-.modal_subtitle {
+.modal__subtitle {
     text-align: center;
     margin: 15px 50px;
     padding: 10px 0;
