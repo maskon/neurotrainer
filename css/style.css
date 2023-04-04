@@ -147,7 +147,8 @@ body.no-scroll {
 .header-top__link {
     margin-right: 36px;
     line-height: 1.05;
-    transition-duration: 0.3s;
+    transition-duration: .3s;
+    transition-property: color;
 }
 
 .header-top__link:hover {
@@ -235,7 +236,7 @@ body.no-scroll {
     font-size: 18px;
     line-height: 24px;
     padding: 0 15px 0 30px;
-    transition-duration: .4s;
+
 }
 
 .header-center__tel:before {
@@ -345,6 +346,7 @@ body.no-scroll {
     color: #333333;
     padding: 20px 10px;
     transition-duration: .2s;
+    transition-property: color;
 }
 
 .header-bottom__link:hover {
@@ -761,6 +763,8 @@ body.no-scroll {
     line-height: 18px;
     color: #333333;
     transition-duration: .3s;
+    transition-property: background;
+    transition-property: color;
 }
 
 .btn:hover {
@@ -948,6 +952,7 @@ body.no-scroll {
     line-height: 17px;
     text-decoration-line: underline;
     transition-duration: .2s;
+    transition-property: color;
 }
 
 .card-title-link:hover {
@@ -1043,6 +1048,7 @@ body.no-scroll {
     line-height: 18px;
     color: #FFFFFF;
     transition-duration: .3s;
+    transition-property: background;
 }
 
 .card-form__btn:hover {
@@ -1062,6 +1068,7 @@ body.no-scroll {
     color: #333333;
     padding: 10px;
     transition-duration: .3s;
+    transition-property: background, color;
 }
 
 .card__btn:hover {
@@ -1419,6 +1426,7 @@ body.no-scroll {
     color: #FFFFFF;
     border-radius: 0 5px 5px 0;
     transition-duration: .3s;
+    transition-property: background, color;
 }
 
 .form__btn-footer:hover {
@@ -1442,6 +1450,7 @@ body.no-scroll {
     background: #292929;
     color: #FFFFFF;
     transition-duration: .3s;
+    transition-property: background, color;
 }
 
 .footer-top_btn:hover {
@@ -1474,11 +1483,13 @@ body.no-scroll {
     line-height: 26px;
     text-decoration-line: underline;
     transition-duration: .2s;
+    transition-property: color;
 }
 
 .footer-right li {
     text-decoration: none;
     transition-duration: .3s;
+    transition-property: color;
 }
 
 .footer-center li:hover {
@@ -2116,6 +2127,7 @@ body.no-scroll {
     line-height: 18px;
     text-decoration-line: underline;
     transition-duration: .3s;
+    transition-property: color;
 }
 
 .modal-password:hover {
@@ -2137,6 +2149,7 @@ body.no-scroll {
     color: #FFFFFF;
     margin: 5px 10px 0 0;
     transition-duration: .3s;
+    transition-property: background, color;
 }
 
 .modal__btn:hover {
@@ -2595,7 +2608,7 @@ body.no-scroll {
     .slider-for .slick-arrow {
         top: 104%;
     }
-    
+
     .slider-for .slick-arrow.slick-prev {
         z-index: 0;
     }
@@ -2651,15 +2664,15 @@ body.no-scroll {
         width: 100%;
         height: auto;
     }
-    
+
     .slider-for .slick-arrow.slick-prev {
         left: 38%;
     }
-    
+
     .slider-for .slick-arrow.slick-next {
         right: 38%;
     }
-    
+
     .card-product_subtitle {
         font-size: 23px;
         line-height: 25px;
