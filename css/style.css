@@ -109,6 +109,13 @@ body.no-scroll {
     overflow: hidden;
 }
 
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1153,14 +1160,18 @@ body.no-scroll {
     max-width: 100%;
     object-fit: cover;
     max-height: 433px;
+    padding: 0 10px;
+}
+
+.card_image {
+    max-width: 550px;
 }
 
 .img-card-2 {
     width: 100%;
-    height: 433px;
+    max-height: 433px;
     border-radius: 10px;
 }
-
 
 @media (max-width: 991px) {
 
@@ -1169,13 +1180,19 @@ body.no-scroll {
     }
 
     .card_image {
-        width: 100%;
-        padding: 0 10px;
+        max-width: 100%;
     }
 
     .img-card-2 {
         width: 100%;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .img-card-2 {
+        max-height: 410px;
     }
 }
 
