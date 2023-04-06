@@ -1954,6 +1954,14 @@ body.no-scroll {
     .filter {
         flex: 0 0 150px;
     }
+    
+    .filters-price_inputs {
+        width: 235px;
+    }
+    
+    .filters-price_input {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
