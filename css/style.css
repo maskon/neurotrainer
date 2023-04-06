@@ -2028,9 +2028,19 @@ body.no-scroll {
         display: flex;
         justify-content: space-between;
     }
+    
+    .filters-price_label {
+        height: 35px;
+        padding: 8px;
+    }
 
     .filters-price_inputs {
         max-width: 320px;
+    }
+    
+    .filters-price_input {
+        width: 40px;
+        font-size: 12px;
     }
 
     .search-mobil {
